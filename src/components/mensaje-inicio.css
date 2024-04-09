@@ -23,4 +23,5 @@ button{
     margin-left: 40px;
     width: 155px;
     box-sizing: border-box;
+    cursor: pointer;
 }

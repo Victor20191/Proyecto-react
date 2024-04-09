@@ -17,8 +17,11 @@
 }
 a{
     text-decoration: none;
-    margin-right: 8px;
+    margin-right: 60px;
     color:black;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
+}
+a:hover{
+    color:#17A589;
 }

@@ -1,24 +1,31 @@
-
-.logo>h1{
-    font-size: 40px;
-    color: #17A589;
-    font-weight: bold;
-    
-
+.mensaje-final{
+    width: 70%;
+    margin: 0 auto;
+    margin-top:40px;
 }
-.contenedor{
-    border: solid 1px;
+
+.mensaje-final ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: baseline
-}
-.contenedor>ul{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    margin-right: 8px;
-    color:black;
-    font-weight: bold;
-    font-size: 18px;
-}
+  }
+  
+  .mensaje-final ul li {
+    display: inline-block;
+    margin-right: 20px; 
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item img {
+    margin-right: 10px;
+  }
+  span{
+    font-size: 16px;
+  }

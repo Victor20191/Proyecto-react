@@ -1,0 +1,21 @@
+.contenedor-principal {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+
+  .contenedor-img {
+    width: 200px; 
+    margin: 10px; 
+    border: 1px solid #ccc; 
+    padding: 5px; 
+  }
+  
+  .contenedor-img img {
+    width: 100%; 
+    height: auto;
+    display:inline-block;
+  }
+  
