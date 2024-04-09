@@ -1,0 +1,26 @@
+.mensaje-bienvenida{
+border: solid 1px green;
+}
+.mensaje-bienvenida{
+    height: 600px;
+}
+h1{
+    font-size: 18px;
+}
+.mensaje{
+    width: 40%;
+    margin-left: 30px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+button{
+    background-color:#17A589;
+    color: white;
+    padding: 20px;
+    border-style: none;
+    margin-left: 40px;
+    width: 155px;
+    box-sizing: border-box;
+}
