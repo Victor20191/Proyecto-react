@@ -1,8 +1,14 @@
 import { useEffect, useState } from "react";
 import "./pagina-productos.css";
-export default function PaginaProductos() {
-  const [productos, setProductos] = useState([]);
+import Carrito from "../components/carrito";
+export default function PaginaProductos({ allProducts, setAllProducts }) {
 
+const[active,setActive]=useState(false);//Carrito
+
+  const [productos, setProductos] = useState([]); // Para evitar que se siga haciendo la petición de manera infinita
+  const onAddProduct = () => {
+    console.log("Prueba");
+  };
   useEffect(() => {
     fetch("https://fakestoreapi.com/products?limit=100")
       .then((res) => res.json())
@@ -10,20 +16,22 @@ export default function PaginaProductos() {
         setProductos(data);
       });
   }, []);
-
   return (
-    <div className="contenedor-principal">
-      {productos.map((producto, index) => (
-        <div className="contenedor-img" key={index}>
-          <img src={producto.image} alt={producto.title} />
-          <h3>{producto.title}</h3>
-          <p>Precio:{producto.price}</p>
-          <p>Unidades:{producto.quantity}</p>
-          <div className="carrito">
-            <button>Añadir al carrito</button>
+    <>
+      <Carrito onClick={()=>setActive(!active)}></Carrito>
+      <div className="contenedor-principal">
+        {productos.map((producto, index) => (
+          <div className="contenedor-img" key={index}>
+            <img src={producto.image} alt={producto.title} />
+            <h3>{producto.title}</h3>
+            <p>Precio:${producto.price}</p>
+            <p>Unidades:1934</p>
+            <div className="carrito">
+              <button className="boton-carrito" onClick={() => onAddProduct()}>Añadir al carrito</button>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 }

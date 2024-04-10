@@ -7,7 +7,6 @@
 
 }
 .contenedor{
-    border: solid 1px;
     display: flex;
     justify-content: space-between;
     align-items: baseline
@@ -23,5 +22,6 @@ a{
     font-size: 20px;
 }
 a:hover{
-    color:#17A589;
+    color: #148D75;
+
 }

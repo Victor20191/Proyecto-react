@@ -3,8 +3,10 @@ import NavBarInferior from "../components/nav-var-inferior";
 export default function PaginaInicio() {
   return (
     <div>
-    <MensajeInicio></MensajeInicio>
-    <NavBarInferior></NavBarInferior>
+
+        <MensajeInicio></MensajeInicio>
+        <NavBarInferior></NavBarInferior>
+
     </div>
   );
 }
