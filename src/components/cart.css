@@ -1,0 +1,35 @@
+.contenedor-principal {
+    display: flex;
+    flex-wrap: wrap;
+    --align-content: end;
+    align-content: start;
+    margin-top: 20px;
+  
+  }
+  
+  .contenedor-img {
+    width: 150px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+  
+  .contenedor-img img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  
+  .boton-carrito {
+    justify-content: center;
+    background-color: #17a589;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 8px;
+    border-style: none;
+    width: 140px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  

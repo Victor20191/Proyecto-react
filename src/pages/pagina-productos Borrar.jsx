@@ -1,7 +1,13 @@
 import { useEffect, useState } from "react";
 import "./pagina-productos.css";
 import Carrito from "../components/carrito";
+
+/*Context */
+
+/**/
+
 export default function PaginaProductos({ allProducts, setAllProducts }) {
+
 
 const[active,setActive]=useState(false);//Carrito
 

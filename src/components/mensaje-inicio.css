@@ -31,3 +31,20 @@ button{
 button:hover {
     background-color: #148D75;
   }
+
+  .carrito-compra{
+    background-color:#E76A4F;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 10px;
+    border-style: none;
+    margin-left: 40px;
+    width: 160px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  .carrito-compra:hover{
+    background-color: #E36347;
+  }
